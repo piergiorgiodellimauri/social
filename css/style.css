@@ -46,13 +46,13 @@ body{
 }
 .feedback{
   flex: 30%;
-  position:relative;
+  width: auto;
   align-content: center;
 }
 .main_title{
   font-weight: 700;
   color: var(--vdm);
-  font-size: 3rem;
+  font-size: 45px;
   height: auto;
   width: 90%;
 }
