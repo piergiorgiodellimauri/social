@@ -104,12 +104,11 @@ span{
   flex-wrap: nowrap;
 }
 .feed_1{
-  flex:25%;
   margin-left: 10%;
   background-color: var(--vdm);
   border-radius: 8px;
   padding: 30px;
-  width: 80%;
+  width: 25%;
   height: 80%;
 }
 .picture{
@@ -121,6 +120,7 @@ span{
 .feed_1_top{
   color:var(--w);
   display: inline-flex;
+  align-items: center;
 }
 .feed_1_toptext{
   margin-left: 10%;
@@ -132,20 +132,21 @@ span{
 .feed_1_text{
   color:var(--w);
   font-size: 12px;
+  line-height: 2;
 }
 .feed_2{
-  flex:25%;
   margin-top: 2%;
-  margin-left: 3%;
+  margin-left: 2%;
   background-color: var(--vdm);
   border-radius: 8px;
   padding: 30px;
-  width: 80%;
+  width: 25%;
   height: 80%;
 }
 .feed_2_top{
   color:var(--w);
   display: inline-flex;
+  align-items: center;
 }
 .feed_2_toptext{
   margin-left: 10%;
@@ -154,20 +155,21 @@ span{
 .feed_2_text{
   color:var(--w);
   font-size: 12px;
+  line-height: 2;
 }
 .feed_3{
-  flex:25%;
   margin-top: 4%;
-  margin-left: 3%;
+  margin-left: 2%;
   background-color: var(--vdm);
   border-radius: 8px;
   padding: 30px;
-  width: 80%;
+  width: 25%;
   height: 80%;
 }
 .feed_3_top{
   color:var(--w);
   display: inline-flex;
+  align-items: center;
 }
 .feed_3_toptext{
   margin-left: 10%;
@@ -176,11 +178,39 @@ span{
 .feed_3_text{
   color:var(--w);
   font-size: 12px;
+  line-height: 2;
 }
+.space{
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 750px){
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  .rat_1,.rat_2,.rat_3{
+    margin: 10% 0 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .space{
+    display: block;
+  }
+  .feed{
+    display: flex;
+    flex-direction: column;
+  }
+  .feed_1,.feed_2,.feed_3{
+    margin: 2% 0 0 10%;
+    width: 80%;
+    height: 80%;
 }
